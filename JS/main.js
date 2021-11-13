@@ -1,3 +1,4 @@
+AOS.init();
 $(document).ready(function () {
     $('.head-btn').click(function () {
         $('.side-menu').addClass("offcanvas-menu");
@@ -14,7 +15,7 @@ $(document).ready(function () {
 
     function checkwidth() {
         var windowSize = $(window).width();
-        if (windowSize >= 767) {
+        if (windowSize >= 992) {
             $('.side-menu').removeClass("offcanvas-menu");
         }
     }

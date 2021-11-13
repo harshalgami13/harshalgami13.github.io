@@ -9,6 +9,7 @@ font-family: 'Ubuntu', sans-serif;
     --white-color: #fff;
     --main-color: #3B42FF;
     --second-color: #3BB6FF;
+    --third-color: #0f1375;
 
 }
 
@@ -167,6 +168,7 @@ a{
     transition: .3s all ease-in-out;
 }
 .header1.fixed{
+    z-index: 100000;
     position: fixed;
     background-color: white;
     box-shadow: 0px 3px 50px 0px #00000025;
@@ -206,13 +208,83 @@ a{
 }
 
 
+/* section1 start*/
+.section1{
+    padding: 15vh 0;
+    height: 100vh;
+}
+.section1 .left-side{
+    position: relative;
+}
+.section1 .left-side .box{
+    display: flex;
+    height: 57vh;
+    overflow: hidden;
+    padding: 8vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.section1 .left-side .box .title1,
+.section1 .left-side .box .title2,
+.section1 .left-side .box .title3{
+    margin: 2.5px 0;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.section1 .left-side .box .title1{
+    font-size: 4.5vh;
+    letter-spacing: 1px;
+}
+.section1 .left-side .box .title2{
+    letter-spacing: 2px;
+    font-size: 6vh;
+}
+.section1 .left-side .box .title3{
+    font-size: 2.6vh;
+    letter-spacing: 2px;
+    color: var(--third-color);
+    font-weight: 500;
+}
+.section1 .right-side{
+    overflow: hidden;
+}
+.section1 .right-side .img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.section1 .right-side .img img{
+    position: absolute;
+    width: 60vh;
+}
+.section1 .right-side .img img.img1{
+    z-index: 10;
+}
+.section1 .right-side .img img.img2{
+    z-index: 11;
+}
 
 
-@media (max-width: 768px) {
+
+
+
+
+@media (max-width: 991px) {
     .header1 .head{
         display: none;
     }
     .head-btn{
         display: initial;
+    }
+}
+@media (max-width: 768px) {
+    .section1{
+        height: 82vh;
+    }
+    .section1 .left-side .box{
+        height: 50vh;
+    }
+    .section1 .right-side{
+        display: none;
     }
 }
