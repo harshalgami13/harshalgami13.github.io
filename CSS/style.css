@@ -26,21 +26,107 @@ a{
     text-decoration: none !important;
 }
 
+/*scroll up btn*/
+.scroll-up-btn i{
+    font-size: 16px;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 36px;
+    width: 36px;
+    background-color: #5f45d3;
+    right: 20px;
+    text-align: center;
+    line-height: 25.5px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 50%;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    bottom: 10px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    background: #453299;
+}
+
+/* social */
+.social{
+    /* display: none; */
+    position: fixed;
+    top: 21%;
+    left: -50px;
+    /* opacity: 0; */
+    z-index: 900;
+    transition: 0.51s ease-in-out;
+    border-radius: 0 2px 2px 0;
+    /* border: 1px solid black; */
+}
+.social.show{
+    left: 0px;
+    opacity: 1;
+}
+
+.social ul{
+    padding: 0;
+    margin: 0;
+}
+
+.social li{
+    list-style: none;
+    background-color: #ffffff;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.social li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 2.5vh;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.social li a i{
+    cursor: pointer;
+}
+
+.social li:hover{
+    background-color: #453299;
+}
+
+.social li:hover a{
+    color: #fff;
+}
+
+
+
+
+
+
 
 /*side-menu*/
 .side-menu{
     width: 90%;
     position: fixed;
     left: 0;
-    z-index: 2000;
+    z-index: 1000;
     padding: 5vh;
     backdrop-filter: blur(1px);
     height: 100vh;
     transform: translateX(-100%);
-    box-shadow: 0px 0 20px 10px #0000001a;
     transition: .3s all ease-in-out;
 }
 .offcanvas-menu.side-menu{
+    box-shadow: 0px 0 20px 10px #0000001a;
     transform: translateX(0%);
 }
 .side-menu .close-btn{
@@ -67,6 +153,9 @@ a{
 /*header1 start*/
 .head-btn{
     display: none;
+}
+.head-btn.show{
+    opacity: 0 !important;
 }
 .header1{
     min-height: 9vh;
