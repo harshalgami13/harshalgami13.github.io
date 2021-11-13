@@ -120,8 +120,8 @@ a{
     left: 0;
     z-index: 1000;
     padding: 5vh;
-    backdrop-filter: blur(1px);
     height: 100vh;
+    background-color: var(--white-color);
     transform: translateX(-100%);
     transition: .3s all ease-in-out;
 }
@@ -143,7 +143,7 @@ a{
     margin: 2vh 0;
 }
 .side-menu .side-menu-content li a{
-    color: black;
+    color: var(--black-color);
 }
 .side-menu .side-menu-content li a:hover{
     color: var(--main-color);
@@ -160,12 +160,16 @@ a{
 .header1{
     min-height: 9vh;
     display: grid;
-    /* position: fixed; */
-    /* box-shadow: 0px 3px 50px 0px #00000025; */
+    position: absolute;
     width: 100%;
     align-items: center;
-    backdrop-filter: blur(6px);
     width: 100%;
+    transition: .3s all ease-in-out;
+}
+.header1.fixed{
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 3px 50px 0px #00000025;
 }
 .header1 .left-side{
     display: flex;
@@ -186,7 +190,6 @@ a{
     justify-content: right;
     align-items: center;
     align-content: center;
-    /* line-height: 3vh; */
 }
 .header1 ul li{
     padding: 0 4vh;
@@ -197,7 +200,6 @@ a{
     font-size: 2.45vh;
     font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
-    /* font-weight: 500; */
 }
 .header1 ul li a:hover{
     color: var(--main-color) !important;
