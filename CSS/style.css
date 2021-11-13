@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif; 
+*/
+
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+    --main-color: #3B42FF;
+    --second-color: #3BB6FF;
+
+}
+
+body{
+    font-family: 'Roboto Slab', serif !important;
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+
+/*side-menu*/
+.side-menu{
+    width: 90%;
+    position: fixed;
+    left: 0;
+    z-index: 2000;
+    padding: 5vh;
+    backdrop-filter: blur(1px);
+    height: 100vh;
+    transform: translateX(-100%);
+    box-shadow: 0px 0 20px 10px #0000001a;
+    transition: .3s all ease-in-out;
+}
+.offcanvas-menu.side-menu{
+    transform: translateX(0%);
+}
+.side-menu .close-btn{
+    text-align: right;
+    font-size: 4vh;
+    margin: 2vh;
+}
+.side-menu .side-menu-content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side-menu .side-menu-content li{
+    margin: 2vh 0;
+}
+.side-menu .side-menu-content li a{
+    color: black;
+}
+.side-menu .side-menu-content li a:hover{
+    color: var(--main-color);
+    cursor: pointer !important;
+}
+
+/*header1 start*/
+.head-btn{
+    display: none;
+}
+.header1{
+    min-height: 9vh;
+    display: grid;
+    /* position: fixed; */
+    /* box-shadow: 0px 3px 50px 0px #00000025; */
+    width: 100%;
+    align-items: center;
+    backdrop-filter: blur(6px);
+    width: 100%;
+}
+.header1 .left-side{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.header1 .logo{
+    font-size: 3vh;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+.header1 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    /* line-height: 3vh; */
+}
+.header1 ul li{
+    padding: 0 4vh;
+}
+.header1 ul li a{
+    color: var(--black-color);
+    cursor: pointer;
+    font-size: 2.45vh;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    /* font-weight: 500; */
+}
+.header1 ul li a:hover{
+    color: var(--main-color) !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header1 .head{
+        display: none;
+    }
+    .head-btn{
+        display: initial;
+    }
+}
