@@ -1,6 +1,6 @@
 <a href="https://harshalgami13.github.io/"><img src="Assets/logo_transp1.png" width="250px" align="center"></a>
 
-# Gami Harshal 
+# Harshal Gami
 
 I am a front-end Developer based in India.
 
