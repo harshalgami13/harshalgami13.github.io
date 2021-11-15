@@ -25,7 +25,7 @@ On this page you can find some information about me and a few project. Also You 
 
  [![Instagram][1.1]][1.2] [![Facebook][2.1]][2.2] [![Linkedin][3.1]][3.2] [![Github][7.1]][7.2] [![Gmail][8.1]][8.2]
  
- [![Mackwell][4.1]][4.2] [![Mackwell][5.1]][5.2] [![Mackwell][6.1]][6.2]
+ [![harshalgami13.github.io][4.1]][4.2] [![harshalgami13.github.io][5.1]][5.2] 
 
 [1.1]: https://img.shields.io/badge/Instagram-C13584?style=for-the-badge&logo=instagram&logoColor=ffffff
 [1.2]: https://www.instagram.com/___.h_g_patel.___13/
