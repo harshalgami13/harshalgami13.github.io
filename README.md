@@ -1,4 +1,4 @@
-<a href="https://harshalgami13.github.io/"><img src="Assets/logo_transp.png" width="150px" align="center"></a>
+<a href="https://harshalgami13.github.io/"><img src="Assets/logo_transp.png" width="250px" align="center"></a>
 
 # Gami Harshal 
 
