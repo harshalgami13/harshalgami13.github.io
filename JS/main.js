@@ -58,16 +58,51 @@ $(document).ready(function () {
 
 
     var typed = new Typed(".typing", {
-        strings: ["Front-end Developer", "Web Designer" ,"Angualr Developer ", "Database Creater "],
+        strings: ["Front-end Developer", "Web Designer", "Angualr Developer ", "Database Creater "],
         typeSpeed: 60,
         backSpeed: 50,
         loop: true
     });
     var typed = new Typed(".typing2", {
-        strings: ["Namaste","Hello ", "Hola ", "Bonjour"],
+        strings: ["Namaste", "Hello ", "Hola ", "Bonjour"],
         typeSpeed: 70,
         backSpeed: 50,
         loop: true
     });
 
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            425: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+    });
 })

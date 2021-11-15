@@ -485,12 +485,77 @@ a{
     width: 82%;
 }
 
+/*section5 start*/
+.section5{
+    padding: 10vh 0 15vh;
+    background-color: #0f0f2b;
+    color: var(--white2-color);
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+.section5 .section-title{
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10vh;
+    color: var(--white-color);
+    font-family: var(--ubuntu-font);
+}
+.section5 .swiper {
+    width: 100%;
+    /* overflow: visible; */
+    height: 100%;
+}
 
+.section5 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 
-
-
-
-
+.section5 .swiper-slide .box .img {
+    min-height: 30vh;
+    overflow: hidden;
+}
+.section5 .swiper-slide .box .img img {
+    display: block;
+    width: 100%;
+    /* object-fit: cover; */
+}
+.section5 .swiper-slide .box .content {
+    position: relative;
+    color: white;
+    transform: translateY(20vh);
+}
+.section5 .swiper-button-next, 
+.section5 .swiper-button-prev{
+    background: var(--white-color);
+    color: var(--four-color);
+    padding: 25px;
+}
+.section5 .swiper-button-next::after, 
+.section5 .swiper-button-prev::after{
+    font-size: 20px;
+}
+.section5 .swiper-pagination-bullet {
+    display: inline-block;
+    border-radius: 50%;
+    transform: translateY(26px);
+    /* opacity: 1; */
+}
 
 
 @media (max-width: 991px) {
