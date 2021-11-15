@@ -1,4 +1,6 @@
+//Animataion
 AOS.init();
+
 $(document).ready(function () {
     $('.head-btn').click(function () {
         $('.side-menu').addClass("offcanvas-menu");
@@ -20,7 +22,6 @@ $(document).ready(function () {
         }
     }
     checkwidth();
-    // Bind event listener
     $(window).resize(checkwidth);
 
 
@@ -40,6 +41,8 @@ $(document).ready(function () {
         }
         if (this.scrollY > 0) {
             $('.header1').addClass("fixed");
+            // $('.header1').addClass("fixed");
+
         } else {
             $('.header1').removeClass("fixed");
         }
@@ -50,4 +53,21 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: 0 });
         $('html').css("scrollBehavior", "auto");
     });
+
+
+
+
+    var typed = new Typed(".typing", {
+        strings: ["Front-end Developer", "Web Designer" ,"Angualr Developer ", "Database Creater "],
+        typeSpeed: 60,
+        backSpeed: 50,
+        loop: true
+    });
+    var typed = new Typed(".typing2", {
+        strings: ["Namaste","Hello ", "Hola ", "Bonjour"],
+        typeSpeed: 70,
+        backSpeed: 50,
+        loop: true
+    });
+
 })
