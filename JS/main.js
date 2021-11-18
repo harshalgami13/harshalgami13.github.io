@@ -15,6 +15,10 @@ $(document).ready(function () {
         $('.side-menu').removeClass("offcanvas-menu");
     })
 
+    $('.social-trg').click(function () {
+        $('.social-grp').toggle(500);
+    })
+
     function checkwidth() {
         var windowSize = $(window).width();
         if (windowSize >= 992) {
@@ -27,7 +31,7 @@ $(document).ready(function () {
 
 
 
-    // scroll-up button show/hide script
+    // scroll-up button show/hide script + header fixed
     $(window).scroll(function () {
         if (this.scrollY > 150) {
             $('.scroll-up-btn').addClass("show");
@@ -56,7 +60,7 @@ $(document).ready(function () {
 
 
 
-
+    //typing js
     var typed = new Typed(".typing", {
         strings: ["Front-end Developer", "Web Designer", "Angualr Developer ", "Database Creater "],
         typeSpeed: 60,
@@ -70,6 +74,8 @@ $(document).ready(function () {
         loop: true
     });
 
+
+    //swiper
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -105,4 +111,6 @@ $(document).ready(function () {
             },
         },
     });
+
+
 })

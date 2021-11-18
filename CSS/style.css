@@ -76,7 +76,7 @@ a{
     pointer-events: auto;
 }
 .scroll-up-btn:hover{
-    background: #453299;
+    background: var(--third-color);
 }
 
 /* social */
@@ -96,43 +96,39 @@ a{
     opacity: 1;
     box-shadow: 0px 0px 29px 0px #00000015;
 }
-
 .social ul{
     padding: 0;
     margin: 0;
 }
-
 .social li{
     list-style: none;
     background-color: #ffffff;
     padding: 10px;
     transition: 0.2s ease-in-out;
 }
-
 .social li a{
     text-decoration: none;
     color: #000000;
     font-size: 2.5vh;
+    display: grid;
+    padding: 1vh 0;
+    justify-items: center;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
-
 .social li a i{
     cursor: pointer;
 }
-
 .social li:hover{
-    background-color: #453299;
+    background-color: var(--third-color);
 }
-
 .social li:hover a{
     color: #fff;
 }
-
-
-
-
-
+.social .social-trg li{
+    color: var(--white-color);
+    background-color: var(--third-color);
+}
 
 
 /*side-menu*/
@@ -486,9 +482,7 @@ a{
 /*section5 start*/
 .section5{
     padding: 10vh 0;
-    border-block: 1px solid lightgray;
-    /* background-color: #0f0f2b; */
-    /* clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%); */
+    border-top: 1px solid lightgray;
 }
 .section5 .section-title{
     color: var(--four-color);
@@ -568,7 +562,106 @@ a{
     color: var(--white-color);
 }
 
+/* section6 start */
+.section6{
+    padding: 10vh 0;
+    background-color: #0f0f2b;
+}
+.section6 .section-title{
+    color: var(--white-color);
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10vh;
+    font-family: var(--ubuntu-font);
+}
+.section6 .data ul li{
+    padding: 5px 10px;
+    margin: 10px 1px;
+    border-radius: 3px;
+    transition: 0.1s ease-in-out;
+    border: 1px solid var(--white2-color);
+}
+.section6 .data ul li:hover{
+    border-left: 5px solid var(--white2-color);
+}
+.section6 .data ul li a{
+    color: var(--white2-color);
+    font-size: 2.45vh;
+}
 
+/* section7 start */
+.section7{
+    padding: 10vh 0;
+    /* background-color: #0f0f2b; */
+}
+.section7 .section-title{
+    /* color: var(--white-color); */
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10vh;
+    font-family: var(--ubuntu-font);
+}
+.section7 .form{
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.section7 form div.data-input{
+    display: flex;
+}
+.section7 form input::placeholder,
+.section7 form textarea::placeholder{
+    color: gray;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: var(--ubuntu-font);
+}
+.section7 form input,
+.section7 form textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 7px 15px;
+    font-size: 2.15vh;
+    outline: none;
+    color: var(--third-color) !important;
+    border: 0.123rem solid gray;
+    background-color: transparent;
+    font-family: var(--ubuntu-font);
+}
+.section7 form .name{
+    border-right: none;
+}
+.section7 form .email{
+    border-left: none;
+}
+.section7 form .name:focus,
+.section7 form .email:focus,
+.section7 form textarea:focus{
+    border-color: var(--main-color);
+}
+.section7 form button{
+    background-color: var(--main-color);
+    border: none;
+    margin: 10px 0;
+    color: var(--white-color);
+    padding: 12px 15vh;
+    font-size: 2.40vh;
+    width: 100%;
+    transition: 0.1s ease-in-out;
+    border: 1px solid transparent;
+}
+.section7 form button:hover{
+    background-color: var(--white-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+
+/* media query */
 
 @media (max-width: 991px) {
     .header1 .head{
@@ -578,6 +671,7 @@ a{
         display: initial;
     }
 }
+
 @media (max-width: 768px) {
     .section1{
         height: 82vh;
@@ -587,5 +681,15 @@ a{
     }
     .section1 .right-side{
         display: none;
+    }
+    .section7 form div.data-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .section7 form .name{
+        border: 0.123rem solid gray;
+    }
+    .section7 form .email{
+        border: 0.123rem solid gray;
     }
 }
