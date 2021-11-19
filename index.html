@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/form.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -27,10 +28,6 @@
         <i class="fas fa-angle-up"></i>
     </div>
 
-    <style>
-        @import url('https://css.gg/arrow-long-left.css');
-        @import url('https://css.gg/arrow-long-right.css');
-    </style>
     <!-- side social -->
     <div class="social">
         <ul class="social-trg">
@@ -114,9 +111,6 @@
     <!-- section2 start -->
     <section class="section2">
         <div>
-            <style>
-                @import url('https://css.gg/arrow-long-down.css');
-            </style>
             <i class="gg-arrow-long-down" style="margin: auto;"></i>
         </div>
     </section>
@@ -436,7 +430,7 @@
             <div class="section-title">Contact</div>
             <div class="row">
                 <div class="col-md-6 col-12 form">
-                    <form action="">
+                    <form action="https://formspree.io/f/xjvjnlng" method="post" id="my-form">
                         <div class="data-input">
                             <input class="name" type="text" name="Name" placeholder="Name*" required>
                             <input class="email" type="email" name="Email" placeholder="Email*" required>
@@ -445,6 +439,7 @@
                         <textarea id="" rows="8" name="Message" placeholder="Write Here ..."></textarea>
                         <button class="form-submit" type="submit">Submit</button>
                     </form>
+                    <div id="status"></div>
                 </div>
             </div>
         </div>
@@ -457,6 +452,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./JS/main.js"></script>
+    <script src="./JS/form.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

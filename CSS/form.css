@@ -1,0 +1,37 @@
+#status {
+    border: none;
+    margin: 10px 0;
+    padding: 12px 15vh;
+    font-size: 2.45vh;
+    letter-spacing: 1px;
+    width: 100%;
+    font-family: var(--ubuntu-font);
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    border: 1px solid transparent;
+  }
+  #status.success {
+    background-color: #2a8122;
+    color: var(--white-color);
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: #ad2424;
+    color: var(--white-color);
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
