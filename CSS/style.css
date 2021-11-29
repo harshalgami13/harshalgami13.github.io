@@ -378,29 +378,19 @@ a{
     color: var(--white-color);
 }
 .section4 .left-side .cart{
-    border-bottom: 1px solid #dfdfdf;
-    border-top: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
-    border-left: 5px solid var(--third-color);
+    border: 1px solid #dfdfdf;
     margin: 20px 0;
     border-radius: 5px;
     padding: 10px;
     transition: 0.2s ease-in-out;
 }
 .section4 .left-side .cart:hover{
-    background: linear-gradient(122deg, #0f1375 0%, #104bb9 100%)
+    border-left: 5px solid var(--third-color);
 }
 .section4 .left-side .cart .edu-year,
 .section4 .left-side .cart .edu-degree,
 .section4 .left-side .cart .edu-school{
     margin: 4px 2px;
-}
-.section4 .left-side .cart:hover .edu-year,
-.section4 .left-side .cart:hover .edu-school{
-    color: var(--white2-color);
-}
-.section4 .left-side .cart:hover .edu-degree{
-    color: var(--white-color);
 }
 .section4 .left-side .cart .edu-year,
 .section4 .left-side .cart .edu-school{
@@ -415,17 +405,14 @@ a{
     letter-spacing: 1px;
 }
 .section4 .right-side .bars{
-    border-bottom: 1px solid #dfdfdf;
-    border-top: 1px solid #dfdfdf;
-    border-right: 1px solid #dfdfdf;
-    border-left: 5px solid var(--third-color);
+    border: 1px solid #dfdfdf;
     margin: 20px 0;
     border-radius: 5px;
     padding: 15px;
     transition: 0.2s ease-in-out;
 }
 .section4 .right-side .bars:hover{
-    background: linear-gradient(122deg, #0f1375 0%, #104bb9 100%)
+    border-left: 5px solid var(--third-color);
 }
 .section4 .right-side .info{
     display: flex;
@@ -439,20 +426,11 @@ a{
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-.section4 .right-side .bars:hover span{
-    color: var(--white-color);
-}
 .section4 .right-side .box .bars .line{
     height: 5px;
     width: 100%;
     background: var(--white2-color);
     position: relative;
-}
-.section4 .right-side .box .bars:hover .line{
-    background-color: #afafaf;
-}
-.section4 .right-side .box .bars:hover .line::before{
-    background-color: var(--white-color);
 }
 .section4 .right-side .box .bars .line::before{
     content: "";
