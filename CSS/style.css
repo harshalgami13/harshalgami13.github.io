@@ -44,7 +44,10 @@ a{
 ::-webkit-scrollbar-thumb {
     background-color: var(--four-color);
 }
-
+::selection {
+    color: var(--white-color);
+    background: #484848;
+}
 
 /*scroll up btn*/
 .scroll-up-btn i{
