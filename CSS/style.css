@@ -5,6 +5,7 @@
 
 :root{
     --black-color: #000;
+    --dark-color: #0f0f2b;
     --white-color: #fff;
     --white2-color: #dfdfdf;
     --main-color: #3B42FF;
@@ -54,17 +55,17 @@ a{
     position: fixed;
     height: 36px;
     width: 36px;
-    background-color: #5f45d3;
-    right: 20px;
+    background-color: var(--dark-color);
+    right: 22px;
     text-align: center;
-    line-height: 25.5px;
+    line-height: 23px;
     color: #fff;
     z-index: 9999;
     font-size: 30px;
     border-radius: 50%;
-    border-bottom-width: 2px;
     cursor: pointer;
     opacity: 0;
+    border: 2px solid var(--white2-color);
     bottom: 10px;
     pointer-events: none;
     transition: all 0.3s ease;
@@ -311,7 +312,7 @@ a{
 /*section3 start*/
 .section3{
     padding: 10vh 0;
-    background-color: #0f0f2b;
+    background-color: var(--dark-color);
     color: var(--white2-color);
 }
 .section3 .section-title{
@@ -543,7 +544,7 @@ a{
 /* section6 start */
 .section6{
     padding: 10vh 0;
-    background-color: #0f0f2b;
+    background-color: var(--dark-color);
 }
 .section6 .section-title{
     color: var(--white-color);
@@ -572,7 +573,7 @@ a{
 /* section7 start */
 .section7{
     padding: 10vh 0;
-    /* background-color: #0f0f2b; */
+    /* background-color: var(--dark-color); */
 }
 .section7 .section-title{
     /* color: var(--white-color); */
@@ -622,7 +623,7 @@ a{
     border-color: var(--main-color);
 }
 .section7 form button{
-    background-color: var(--main-color);
+    background-color: var(--dark-color);
     border: none;
     margin: 10px 0;
     font-family: var(--ubuntu-font);
@@ -638,6 +639,16 @@ a{
     background-color: var(--white-color);
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+
+.footer1{
+    line-height: 7vh;
+    background-color: var(--dark-color);
+    color: var(--white2-color);
+    font-size: 2.25vh;
+    letter-spacing: 1px;
+    text-align: center;
+    border-top:  1px solid #0000001a;
 }
 
 
