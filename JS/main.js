@@ -62,15 +62,15 @@ $(document).ready(function () {
 
     //typing js
     var typed = new Typed(".typing", {
-        strings: ["Front-end Developer", "Web Designer", "Angualr Developer ", "Database Creater "],
+        strings: ["Front-end Developer", "Web Designer", "Database Creater "],
         typeSpeed: 60,
-        backSpeed: 50,
+        backSpeed: 40,
         loop: true
     });
     var typed = new Typed(".typing2", {
         strings: ["Namaste", "Hello ", "Hola ", "Bonjour"],
         typeSpeed: 70,
-        backSpeed: 50,
+        backSpeed: 40,
         loop: true
     });
 

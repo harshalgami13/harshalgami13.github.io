@@ -12,7 +12,7 @@ On this page you can find some information about me and a few project. Also You 
 
 - Html + Css
 - Jquery
-- Asp.Net
+- Asp.Net 
 - Bootstrap
 - Sql
 
