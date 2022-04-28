@@ -12,9 +12,9 @@ On this page you can find some information about me and a few project. Also You 
 
 - Html + Css
 - Jquery
-- Angular
-- Mongodb
-- Python
+- Asp.Net
+- Bootstrap
+- Sql
 
 ## Education
 
