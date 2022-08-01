@@ -8,6 +8,7 @@
     --dark-color: #0f0f2b;
     --white-color: #fff;
     --white2-color: #dfdfdf;
+    --white3-color: #ffffffc9;
     --main-color: #3B42FF;
     --second-color: #3BB6FF;
     --third-color: #0f1375;
@@ -226,12 +227,14 @@ a {
 
 .header1.fixed .logo {
     font-size: 2.7vh;
+    color: var(--black-color);
 }
 
 .header1 .logo {
     font-size: 3.4vh;
     font-family: var(--ubuntu-font);
     font-weight: 500;
+    color: var(--white2-color);
     letter-spacing: 1px;
     cursor: default;
     transition: 0.4s ease-in-out;
@@ -254,8 +257,12 @@ a {
     padding: 0 4vh;
 }
 
-.header1 ul li a {
+.header1.fixed ul li a {
     color: var(--black-color);
+}
+
+.header1 ul li a {
+    color: var(--white2-color);
     cursor: pointer;
     font-size: 2.45vh;
     font-family: var(--ubuntu-font);
@@ -263,14 +270,18 @@ a {
 }
 
 .header1 ul li a:hover {
-    color: var(--main-color) !important;
+    color: var(--white-color) !important;
 }
 
 
 /* section1 start*/
 .section1 {
     padding: 15vh 0;
-    height: 85vh;
+    height: 100vh;
+    background: url(/Assets/wallpaper2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white-color);
 }
 
 .section1 .left-side {
@@ -307,7 +318,7 @@ a {
 .section1 .left-side .box .title3 {
     font-size: 2.6vh;
     letter-spacing: 2px;
-    color: var(--third-color);
+    color: var(--white3-color);
     font-weight: 500;
 }
 
@@ -323,41 +334,26 @@ a {
 
 .section1 .right-side .img img {
     position: absolute;
-    width: 60vh;
+    width: 40vh;
+    top: 35px;
 }
 
 .section1 .right-side .img img.img1 {
     z-index: 10;
+    animation: 5s ease-in-out 0s infinite normal none running float;
 }
 
-.section1 .right-side .img img.img2 {
-    z-index: 11;
-}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
 
-/* .section2 start */
-.section2 {
-    padding: 0 0 12vh;
-}
+    50% {
+        transform: translateY(-15px);
+    }
 
-.section2 i {
-    animation: vertical 3s ease infinite
-}
-
-@keyframes vertical {
-
-    0%,
-    60%,
-    80%,
     100% {
-        transform: translateY(0);
-    }
-
-    20% {
-        transform: translateY(-7px);
-    }
-
-    40% {
-        transform: translateY(22px);
+        transform: translateY(0px);
     }
 }
 
@@ -378,7 +374,8 @@ a {
 }
 
 .section3 .img img {
-    width: 64%;
+    width: 60%;
+    /* border-radius: 100%; */
     margin: auto;
     display: block;
 }
@@ -773,10 +770,6 @@ a {
 }
 
 @media (max-width: 768px) {
-    .section1 {
-        height: 82vh;
-    }
-
     .section1 .left-side .box {
         height: 50vh;
     }
