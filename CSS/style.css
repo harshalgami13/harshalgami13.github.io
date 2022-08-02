@@ -195,6 +195,7 @@ a {
 /*header1 start*/
 .head-btn {
     display: none;
+    color:var(--white2-color);
 }
 
 .head-btn.show {
