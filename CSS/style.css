@@ -193,6 +193,9 @@ a {
 }
 
 /*header1 start*/
+.header1.fixed .head-btn{
+    color:var(--black-color);
+}
 .head-btn {
     display: none;
     color:var(--white2-color);
